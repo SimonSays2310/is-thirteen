@@ -62,4 +62,18 @@ is () {
 			echo "false"
 		fi
 	fi
+	if [[ $2 == "greaterthan" ]] && [[ $3 == "thirteen" ]]; then
+		if [[ $1 > 13 ]]; then
+			echo "true"
+		else
+			echo "false"
+		fi
+	fi
+	if [[ $2 == "lessthan" ]] && [[ $3 == "thirteen" ]]; then
+		if [[ $1 < 13 ]]; then
+			echo "true"
+		else
+			echo "false"
+		fi
+	fi
 }
